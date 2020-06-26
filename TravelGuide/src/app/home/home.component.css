@@ -1,0 +1,15 @@
+.carousel-caption{
+    position: absolute;
+    bottom: 70%;
+    color: black;
+}
+
+#static{
+    width: 30%;
+    height: 30%;
+    margin-left: 15%;
+    }
+
+.text{
+    width: 60%;
+}

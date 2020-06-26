@@ -1,0 +1,41 @@
+<div>
+    <h1 class="text-center">Travel Offers</h1>
+</div>
+
+<div class="row d-flex justify-content-around">
+
+    <div class="card col-md-5 m-2 py-2 bg" *ngFor="let trip of travels; index as tripId">
+        
+        <h5 class="card-title text-center text-white mt-1">  
+            {{ trip.location }}
+          </h5>
+        <img class="card-img-top" src="{{trip.image}}" alt="Card image cap" [title]="trip.location">
+        <div id="shortDesc" class="text-white m-2">
+            {{trip.description}}
+            <hr>
+            <p>Start date: {{trip.startDate}}</p>
+            <p>Duration: {{trip.duration}}</p>
+            <p>Price: {{trip.price}}</p>
+          <div class="d-flex justify-content-center">
+        <button class="btn btn-primary mt-3" (click)="addToCart(trip)" >Book</button>
+      </div>
+    </div>
+        <div class="card-body">
+                   
+         
+          
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- 
+<div class= card *ngFor="let trip of travels">
+
+<h5 class="card-title text-center mt-1">  
+            {{ trip.location }}
+          </h5>
+        <img class="card-img-top" src="{{trip.image}}" alt="Card image cap" [title]="trip.locatione">      
+</div> -->
+
