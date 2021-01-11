@@ -15,7 +15,7 @@ items = [];
     return this.items;
   }
 
-  clearCart(){
+   clearCart(){
     this.items=[];
     return this.items;
   }

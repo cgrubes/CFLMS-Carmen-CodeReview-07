@@ -1,10 +1,17 @@
-
 <h2>Booked trips</h2>
 <h4>Thanks for booking with us! Any trips that you have booked will appear below:</h4>
 
-<div class="cart-item" *ngFor="let item of items">
+<div class=row>
 
- <p>Location: {{ item.location }} <br> Price: {{ item.price }}</p>
- <hr>
- 
+    <div class="cart-item" *ngFor="let item of items">
+        <div class="card  m-2" style="width: 18rem;">
+            <img class="card-img-top" src={{item.image}} alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">{{item.location}}<br>
+                    Price: {{item.price}}</p>
+            </div>
+        </div>
+
+
+    </div>
 </div>
